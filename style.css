@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+}
+/* identified different header IDs in order to display different text and border colors for the CSS and JS windows */
+#head1 {
+    color: orange;
+    border: solid 3px black;
+    padding: 10px;
+}
+#head2 {
+    color: darkred;
+    border: solid 3px blue;
+    padding: 10px;
+}
+/*Functionality for the CSS carousel */
+#cswindow {
+    display: flex;
+    border: solid 1px black;
+    width: 500px;
+    overflow: hidden;
+}
+#imgSlider {
+    display: flex;
+    animation: csscarousel 20s linear forwards infinite alternate;
+}
+@keyframes  csscarousel {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-2500px);
+    }
+}
+ 
+#jswindow {
+    display: flex;
+    border: solid 1px black;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+#imgCarousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
